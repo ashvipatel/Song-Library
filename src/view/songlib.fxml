@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.songLibController">
+   <children>
+      <ListView fx:id="ListViewLib" prefHeight="370.0" prefWidth="300.0" />
+      <Text fx:id="TextName" layoutX="350.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text fx:id="TextArtist" layoutX="350.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Artist" />
+      <Text fx:id="TextAlbum" layoutX="350.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Album" />
+      <Text fx:id="TextYear" layoutX="350.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year" />
+      <HBox fx:id="HBoxSC" alignment="CENTER_LEFT" layoutX="300.0" layoutY="370.0" prefHeight="30.0" prefWidth="300.0" visible="false">
+         <children>
+            <Button fx:id="ButtonSave" mnemonicParsing="false" text="Save" onAction = "#saveSong" />
+            <Button fx:id="ButtonCancel" mnemonicParsing="false" text="Cancel" onAction = "#cancel" />
+         </children>
+      </HBox>
+      <HBox fx:id="HBoxAED" alignment="CENTER_RIGHT" layoutX="300.0" layoutY="370.0" prefHeight="30.0" prefWidth="300.0">
+         <children>
+            <Button fx:id="ButtonAdd" mnemonicParsing="false" text="Add" onAction = "#addSong"/>
+            <Button fx:id="ButtonEdit" mnemonicParsing="false" text="Edit" onAction = "#editSong" />
+            <Button fx:id="ButtonDelete" mnemonicParsing="false" text="Delete" onAction = "#deleteSong" />
+         </children>
+      </HBox>
+      <Text fx:id="TextDName" layoutX="350.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DefaultName" />
+      <Text fx:id="TextDArtist" layoutX="350.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DefaultArtist" />
+      <Text fx:id="TextDAlbum" layoutX="350.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DefaultAlbum" />
+      <Text fx:id="TextDYear" layoutX="350.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DefaultYear" />
+      <TextField fx:id="TextFieldName" layoutX="350.0" layoutY="45.0" visible="false" />
+      <TextField fx:id="TextFieldArtist" layoutX="350.0" layoutY="105.0" visible="false" />
+      <TextField fx:id="TextFieldAlbum" layoutX="350.0" layoutY="165.0" visible="false" />
+      <TextField fx:id="TextFieldYear" layoutX="350.0" layoutY="225.0" visible="false" />
+   </children>
+</AnchorPane>
